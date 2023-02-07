@@ -1,6 +1,9 @@
 package org.launchcode.techjobs.oo;
 
+import java.lang.reflect.Field;
 import java.util.Objects;
+
+import static java.util.Objects.isNull;
 
 public class Job {
 
@@ -42,6 +45,19 @@ public class Job {
         return getId() == job.getId();
     }
 
+
+    @Override
+    public String toString() {
+        StringBuilder
+        return "\nID: " + this.getId() +
+                "\nName: " + this.getName() +
+                "\nEmployer: " + this.getEmployer() +
+                "\nLocation: " + this.getLocation() +
+                "\nPosition Type: " + this.getPositionType() +
+                "\nCore Competency: " + this.getCoreCompetency() +
+                "\n";
+
+    }
     @Override
     public int hashCode() {
         return Objects.hash(getId());
