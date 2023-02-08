@@ -67,7 +67,7 @@ public class JobTest {
     @Test
     public void testToStringHandlesEmptyField() {
         Job job8 = new Job("Web developer", new Employer("WTF Technology"), new Location("BFE"), new PositionType("Front-end developer"), new CoreCompetency(""));
-        String expected = "/nID: 1" +
+        String expected = "\nID: 1" +
                 "\nName: Web developer" +
                 "\nEmployer: WTF Technology" +
                 "\nLocation: BFE" +

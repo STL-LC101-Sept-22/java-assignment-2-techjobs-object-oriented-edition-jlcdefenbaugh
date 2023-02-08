@@ -49,9 +49,6 @@ public class Job {
 
     @Override
     public String toString() {
-//       if(this.toString().contains("")) {
-//           this.toString().replaceAll("","Data not available");
-//        }
         return "\nID: " + this.getId() +
                 "\nName: " + this.getName() +
                 "\nEmployer: " + this.getEmployer() +
@@ -60,6 +57,8 @@ public class Job {
                 "\nCore Competency: " + this.getCoreCompetency() +
                 "\n";
     }
+
+
     @Override
     public int hashCode() {
         return Objects.hash(getId());
