@@ -8,17 +8,6 @@ public class PositionType extends JobField {
         super(value);
     }
 
-    // TODO: Add a custom toString() method that returns the data stored in 'value'.
-
-    // TODO: Add custom equals and hashCode methods. Consider two PositionType objects "equal" when
-    //  their id fields match.
-
-//    @Override
-//    public boolean equals(Object o) {
-//        return super.equals(o);
-//    }
-
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
