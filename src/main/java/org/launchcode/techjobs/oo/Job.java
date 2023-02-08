@@ -1,6 +1,7 @@
 package org.launchcode.techjobs.oo;
 
 import java.lang.reflect.Field;
+import java.util.ArrayList;
 import java.util.Objects;
 
 import static java.util.Objects.isNull;
@@ -48,7 +49,9 @@ public class Job {
 
     @Override
     public String toString() {
-        StringBuilder
+//       if(this.toString().contains("")) {
+//           this.toString().replaceAll("","Data not available");
+//        }
         return "\nID: " + this.getId() +
                 "\nName: " + this.getName() +
                 "\nEmployer: " + this.getEmployer() +
@@ -56,7 +59,6 @@ public class Job {
                 "\nPosition Type: " + this.getPositionType() +
                 "\nCore Competency: " + this.getCoreCompetency() +
                 "\n";
-
     }
     @Override
     public int hashCode() {
