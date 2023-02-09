@@ -19,9 +19,6 @@ public abstract class JobField {
     }
 
     @Override
-//    public String toString() {
-//        return value;
-//    }
     public String toString() {
         if(value.isEmpty()) {
             return "Data not available";

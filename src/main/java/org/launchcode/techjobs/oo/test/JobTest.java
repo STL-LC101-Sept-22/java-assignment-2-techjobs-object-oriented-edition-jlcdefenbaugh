@@ -78,4 +78,13 @@ public class JobTest {
 
     }
 
+    @Test
+    public void testToStringHandlesJobObjectWithIdOnly() {
+        String spec =  "BONUS: If a Job object ONLY contains data for the id field, the method should return, 'OOPS! This job does not seem to exist.'";
+        Job job9 = new Job("", new Employer(""), new Location(""), new PositionType(""), new CoreCompetency(""));
+        String expected = "OOPS! This job does not seem to exist.";
+        String actual = job9.toString();
+        assertEquals(expected, actual);
+    }
+
 }
